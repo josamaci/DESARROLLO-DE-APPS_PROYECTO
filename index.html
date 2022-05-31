@@ -5,6 +5,8 @@
     <title>Juice Bar</title>
     <link rel="shortcut icon" href="logo.png">
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +22,21 @@
         <h1 align="center"><b>J U I C EㅤB A R</b></h1>
     </header>
 
-    <nav>
-
+    <nav class="navbar">
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li class="menu"><a href="#">MENÚ</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Acaí Bowls </a></li>
+                        <li><a href="#">Salad Bowls</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SOBRE NOSOTROS</a></li>
+                <li><a href="#">CONTÁCTANOS</a></li>
+            </div>
+        </ul>
     </nav>
 
     <section>
