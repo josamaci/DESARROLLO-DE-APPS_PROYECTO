@@ -1,15 +1,14 @@
 * {
     margin: auto;
-    padding: 0%;
-    box-sizing: border-box;
+    box-sizing:content-box;
     font-family: 'Quicksand', sans-serif;
 }
 
 header{
     padding: 5px 5px;
     text-align: center;
-    font-weight: bolder;
     text-decoration: solid;
+    font-weight: bold;
 }
 
 a {
@@ -27,23 +26,36 @@ footer {
 
 .navbar {
     display: flex;
-    align-items:flex-start;
     justify-content: space-between;
-    padding: 12.5px;
+    align-items: flex-start;
+    padding: 0px;
     background-color: #1D4D45;
     color: #fff;
+    position: sticky;
+    top: 0%;
+    width:100%;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
 
 .nav-links a {
     color: #fff;
 }
 
-/* NAVBAR OPTIONS*/
 .options {
     display: flex;
-    gap: 1.25em;
+    gap: 1em;
     font-size: 16px;
     font-weight: bold;
+    text-align: center; 
 }
        
 .options li:hover {
@@ -54,10 +66,10 @@ footer {
 }
        
 .options li {
-    padding: 5px 14px;
+    padding: 5px 20px;
+    text-align: center;
 }
        
-/* DROPDOWN MENU */
 .menu {
     position: relative; 
 }
@@ -68,7 +80,7 @@ footer {
     position: absolute;
     display: none;
     border-radius: 8px;
-    top: 35px;
+    top: 15px;
 }
 
 .dropdown li + li {
@@ -88,13 +100,34 @@ footer {
 .menu:hover .dropdown {
     display: block;
 }
+  
+  section, article {
+    border: 1px solid grey;
+    border-radius: 1%;
+    text-align: center
+  }
+  
+  .container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "logo v contacto a20"
+      "logo v contacto a50"
+      "logo v v a70"
+      "logo v v a80"; 
+  }
+  
+  .logo { grid-area: logo; padding: 1%;}
+  .contacto { grid-area: contacto; }
+  .a30 { grid-area: a30; }
+  .a40 { grid-area: a40; }
+  .a50 { grid-area: a50; }
+  .a60 { grid-area: a60; }
+  .a70 { grid-area: a70; }
+  .a80 { grid-area: a80; }
+  
+  
+  
 
-input[type=checkbox]{
-    display: none;
-} 
-
-.hamburger {
-    display: none;
-    font-size: 24px;
-    user-select: none;
-}
