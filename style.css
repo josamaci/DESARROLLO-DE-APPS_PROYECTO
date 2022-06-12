@@ -1,23 +1,30 @@
 * {
-    margin: auto;
-    box-sizing:content-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
 
-header{
-    padding: 5px 5px;
+header {
+    padding: 0.25% 0.25%;
     text-align: center;
     text-decoration: solid;
     font-weight: bold;
 }
 
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
 a {
     text-decoration: none;
-   }
-   
+}
+
 li {
     list-style: none;
-   }
+}
 
 footer {
     background-color: black;
@@ -28,12 +35,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0%;
     background-color: #1D4D45;
     color: #fff;
     position: sticky;
     top: 0%;
-    width:100%;
+    width: 100%;
 }
 
 ul {
@@ -41,9 +48,9 @@ ul {
     list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
+    margin-inline-start: 0%;
+    margin-inline-end: 0%;
+    padding-inline-start: 0%;
 }
 
 .nav-links a {
@@ -53,25 +60,25 @@ ul {
 .options {
     display: flex;
     gap: 1em;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
-    text-align: center; 
+    text-align: center;
 }
-       
+
 .options li:hover {
     background-color: #163a34;
-    border-radius: 10px;
+    border-radius: 2.5rem;
     transition: 0.35s ease;
     text-decoration: underline;
 }
-       
+
 .options li {
-    padding: 5px 20px;
+    padding: 0.5rem 2rem;
     text-align: center;
 }
-       
+
 .menu {
-    position: relative; 
+    position: relative;
 }
 
 .dropdown {
@@ -79,11 +86,11 @@ ul {
     padding: 1em 0;
     position: absolute;
     display: none;
-    border-radius: 8px;
-    top: 15px;
+    border-radius: 0.75rem;
+    top: 1rem;
 }
 
-.dropdown li + li {
+.dropdown li+li {
     margin-top: 10px;
 }
 
@@ -100,34 +107,56 @@ ul {
 .menu:hover .dropdown {
     display: block;
 }
-  
-  section, article {
-    border: 1px solid grey;
-    border-radius: 1%;
-    text-align: center
-  }
-  
-  .container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "logo v contacto a20"
-      "logo v contacto a50"
-      "logo v v a70"
-      "logo v v a80"; 
-  }
-  
-  .logo { grid-area: logo; padding: 1%;}
-  .contacto { grid-area: contacto; }
-  .a30 { grid-area: a30; }
-  .a40 { grid-area: a40; }
-  .a50 { grid-area: a50; }
-  .a60 { grid-area: a60; }
-  .a70 { grid-area: a70; }
-  .a80 { grid-area: a80; }
-  
-  
-  
 
+.contáctanos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo contacto contacto feedback feedback2" "logo horario siguenos feedback feedback2";
+    justify-items: left;
+    justify-content: left;
+}
+
+.logo {
+    grid-area: logo;
+    padding: 10%;
+    align-self: center;
+    justify-self: center;
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+.horario {
+    grid-area: horario;
+}
+
+.feedback {
+    grid-area: feedback;
+}
+
+.feedback2 {
+    grid-area: feedback2;
+}
+
+.siguenos {
+    grid-area: siguenos;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background-color: #1D4D45;
+    border: 0.005rem solid #FFFF;
+    margin: 0.5rem;
+    padding: 0.4rem;
+    -webkit-border-radius: 12.5%;
+    -moz-border-radius: 12.5%;
+    border-radius: 12.5%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #0000;
+}
