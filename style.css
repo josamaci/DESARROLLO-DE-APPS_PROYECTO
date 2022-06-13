@@ -44,7 +44,7 @@ footer {
 }
 
 ul {
-    display: block;
+    display: flex;
     list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -110,9 +110,9 @@ ul {
 
 .contáctanos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "logo contacto contacto feedback feedback2" "logo horario siguenos feedback feedback2";
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "logo contacto feedback" "logo contacto feedback" "logo contacto feedback";
     justify-items: left;
     justify-content: left;
 }
@@ -126,22 +126,30 @@ ul {
 
 .contacto {
     grid-area: contacto;
-}
-
-.horario {
-    grid-area: horario;
+    align-self: center;
 }
 
 .feedback {
     grid-area: feedback;
+    align-self: center;
 }
 
-.feedback2 {
-    grid-area: feedback2;
+.contacto img {
+    width: 7.5%;
+    height: auto;
+    margin: 0rem 0.6rem;
 }
 
-.siguenos {
-    grid-area: siguenos;
+.contacto #uber {
+    margin: 0.1rem 0.25rem;
+    width: 7.75%;
+    height: auto;
+}
+
+.contacto #pedidosya {
+    margin: 0.1rem 0.25rem;
+    width: 10%;
+    height: auto;
 }
 
 button {
