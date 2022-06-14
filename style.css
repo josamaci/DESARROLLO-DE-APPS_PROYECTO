@@ -179,11 +179,6 @@ h2 {
     text-decoration: underline;
 }
 
-.menú h3 img {
-    width: 2.25%;
-    height: auto;
-}
-
 h4 {
     text-decoration: underline;
 }
@@ -222,6 +217,15 @@ caption {
     width: 90%;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0rem 0.1rem 0.4rem 0.1rem rgb(207, 206, 206);
+    margin: 5%;
+}
+
+.menú h3 img {
+    width: 2.25%;
+    height: auto;
+    margin: 0%;
+    border-radius: none;
+    box-shadow: none;
 }
 
 .p11,
@@ -370,4 +374,9 @@ caption {
 
 .p18_text {
     grid-area: p18_text;
+}
+
+.vid video {
+    width: "25%";
+    height: "auto";
 }
