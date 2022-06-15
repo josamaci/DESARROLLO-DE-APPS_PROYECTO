@@ -28,7 +28,7 @@
     }
 }
 
-input[type=checkbox] {
+.navbar input[type=checkbox] {
     display: none;
 }
 
