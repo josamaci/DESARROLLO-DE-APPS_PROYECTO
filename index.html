@@ -10,8 +10,8 @@
     <meta name="description" content="Somos un restaurante de comida sana.">
     <meta name="author" content="José Macías Guerrero">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="mediastyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/mediastyle.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
@@ -43,8 +43,11 @@
         <div class="menú">
             <a id="menú"></a>
             <a id="acai"></a>
+            <br>
             <h2>MENÚ</h2>
+            <br>
             <h3><img src="media/íconos/ASAI_NEGRO2.png" alt="açaí"> AÇAÍ BOWLS</h3>
+            <br>
             <div class="menú_acaí">
                 <div class="p11">
                     <div class="p11_img">
@@ -138,6 +141,7 @@
             </table>
             <a id="salad"></a>
             <h3><img src="media/íconos/SALAD.webp" alt="salad bowl"> SALAD BOWLS</h3>
+            <br>
             <div class="menú_salad">
                 <div class="p11">
                     <div class="p11_img">
@@ -243,10 +247,12 @@
 
         <div class="sobre_nosotros">
             <a id="sobre_nosotros"></a>
+            <br>
             <h2>SOBRE NOSOTROS</h2>
+            <br>
             <div class="nosotros">
                 <div class="vid">
-                    <video src="/media/video_jb.mp4" controls loop width="300" height="600"></video>
+                    <video src="/media/video_jb.mp4" controls loop></video>
                 </div>
                 <div class="contenido">
                     <p>
@@ -257,10 +263,9 @@
                 </div>
                 <div class="mapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9693952646!2d-79.91411608594052!3d-2.1653466378257753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d5f2a2703ff%3A0x3d98ef0944c599ec!2sJuice%20Bar%20Ecuador!5e0!3m2!1ses-419!2sec!4v1655173151453!5m2!1ses-419!2sec"
-                        width="700" height="300" style=" border:0;"></iframe>
+                        width="700" height="300"></iframe>
                 </div>
             </div>
-            <br>
             <br>
         </div>
     </section>
@@ -288,7 +293,7 @@
                     <label>Correo electrónico:*<br><input type="email" required></label><br>
                     <label>Asunto:<br><input type="text"></label><br>
                     <label>Mensaje:*<br><textarea rows="4" cols="35" required></textarea></label><br>
-                    <label><input type="checkbox" required>No soy un robot</label><br>
+                    <label><input id="check" type="checkbox" required>No soy un robot</label><br>
                     <button><b>Enviar</b></button>
                 </form>
             </div>
