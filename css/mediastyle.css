@@ -4,15 +4,21 @@
     }
 }
 
-@media (min-device-width: 700px) and(max-device-width: 1116px) {
+@media (min-device-width: 800px) and(max-device-width: 1116px) {
     body {
-        font-size: 1rem;
+        font-size: 2em;
     }
 }
 
-@media (min-width:280px) and(max-device-width: 700px) {
+@media (min-width:500px) and(max-device-width: 800px) {
     body {
-        font-size: 0.5rem;
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width:280px) and(max-device-width: 500px) {
+    body {
+        font-size: 1em;
     }
 }
 
@@ -22,13 +28,10 @@
 @media only screen and (min-device-width: 280px) and (max-device-width: 1116px) {
     /*.navbar {
     }*/
-    body {
-        font-size: 1.65rem;
-    }
     .contáctanos {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.3fr 0.5fr;
+        grid-template-rows: 0.1fr 0.3fr 0.3fr;
         grid-template-areas: "logo" "contacto" "feedback";
         justify-items: left;
         justify-content: left;
@@ -43,23 +46,30 @@
     }
     .contacto,
     .feedback {
-        margin: 5%
+        margin: 5%;
+        margin-bottom: 0%;
+    }
+    .feedback {
+        padding: 0%;
+        margin-top: 0%;
+        padding-top: 0%;
+        padding-bottom: 0%;
     }
     .feedback input {
-        width: 30rem;
-        height: 2rem;
+        width: 100%;
+        height: 2em;
     }
     .feedback textarea {
-        width: 30rem;
-        height: 15rem;
+        width: 100%;
+        height: 15em;
     }
     button {
-        font-size: 1.65rem;
+        font-size: 100%;
         padding: 2%;
     }
     #check {
-        width: 2rem;
-        height: 2rem;
+        width: 1em;
+        height: 1em;
         margin-right: 2%;
     }
     .contacto img {
@@ -87,7 +97,7 @@
         row-gap: 2rem;
     }
     .menú h3 img {
-        width: 7%;
+        width: 3%;
     }
     .p11_text,
     .p12_text,
@@ -98,5 +108,38 @@
     .p17_text,
     .p18_text {
         font-size: 1em;
+    }
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.75fr 0.1fr 0.4fr;
+        grid-template-areas: "vid" "contenido" "mapa";
+        column-gap: 0rem;
+        row-gap: 0.5rem;
+        width: 100%;
+    }
+    .vid {
+        grid-area: vid;
+        align-items: center;
+        justify-content: center;
+    }
+    .vid video {
+        width: 80%;
+        height: auto;
+    }
+    .contenido {
+        width: 80%;
+    }
+    .mapa {
+        grid-area: mapa;
+        vertical-align: center;
+        align-self: center;
+        padding-bottom: 3%;
+        width: 80%;
+    }
+    .mapa iframe {
+        border: 0;
+        width: 100%;
+        height: 300px;
     }
 }
