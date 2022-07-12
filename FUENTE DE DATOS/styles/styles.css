@@ -1,0 +1,69 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+@media (width >=500px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+
+.API_info {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+
+.API_info img {
+    width: 6rem;
+    border-radius: 50%;
+    margin: 1%;
+}
+
+.API_use {
+    padding: 2%;
+}
+
+.API_use h3 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+th,
+td {
+    text-align: center;
+    vertical-align: bottom;
+    padding: 0.2rem;
+}
+
+@media only screen and (max-device-width: 500px) {
+    body {
+        font-size: 0.7rem;
+    }
+    .API_info img {
+        width: 3rem;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
