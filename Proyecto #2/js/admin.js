@@ -55,8 +55,7 @@ let cargarDatos = () => {
                                 fetch(url)
                                     .then(response => response.json())
                                     .then(data => {
-                                        console.log(data.sprites.front_default)
-                                        document.querySelector(".photo").innerHTML = `<center><img src="${data.sprites.front_default}" alt="${name}"></center>`
+                                        document.querySelector(".align-self-center").innerHTML = `<center><img src="${data.sprites.front_default}" alt="${name}"></center>`
                                         let stats = data.stats
                                         let hp = stats[0].base_stat
                                         let attack = stats[1].base_stat
@@ -100,8 +99,8 @@ let cargarDatos = () => {
                                                 },
                                             },
                                         });
-                                        document.querySelector(".total").innerHTML = `<p><b>Total de estadísticas base:</b> ${total}</p>`
-
+                                        document.querySelector(".puntos").innerHTML = `<h4>Estadísticas bases totales de ${name}:</h4>
+                                        <p>${total}</p>`
                                     })
                             }
                         }
