@@ -1,0 +1,43 @@
+* {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+.image {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.container {
+    background-color: #FFFFFF;
+    background-size: cover;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+td,
+th {
+    width: 25%;
+}
