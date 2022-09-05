@@ -1,0 +1,15 @@
+.container {
+    background: #FFFF;
+}
+
+.full {
+    min-height: 100vh;
+}
+
+.titulo {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.v-align {
+    padding: 30vh 0;
+}

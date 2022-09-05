@@ -1,0 +1,48 @@
+<app-nav>
+    <section class="container">
+        <h1>Mis pacientes</h1>
+
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" (change)="cambio($event)">
+            <option selected>Seleccione un paciente...</option>
+            <ng-container *ngFor="let usuario of usuarios">
+                <ng-container *ngFor="let paciente of pacientes">
+                <option *ngIf="usuario['ID_USUARIO'] == paciente['ID_PACIENTE']" value="{{paciente}}" >{{usuario['NOMBRE']}}</option>
+            </ng-container>
+            </ng-container>
+        </select>
+        <div class="mat-elevation-z8">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Correo</th>
+                            <th scope="col">Fecha Cita</th>
+                            <th scope="col">Recetas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let cita of citas">
+                            <td scope="row">{{cita['ID_CITA']}}</td>
+                            <ng-container *ngFor="let usuario of usuarios">
+                                <td scope="row" *ngIf="cita['ID_PACIENTE']  == usuario['ID_USUARIO']">{{usuario['NOMBRE']}}</td>
+                                <td scope="row" *ngIf="cita['ID_PACIENTE']  == usuario['ID_USUARIO']">{{usuario['APELLIDO']}}</td>
+                                <td scope="row" *ngIf="cita['ID_PACIENTE']  == usuario['ID_USUARIO']">{{usuario['CORREO']}}</td>
+                            </ng-container>
+                            <td scope="row">{{cita['FECHA']}}</td>
+                            <td scope="row">ver</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+        <br>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+</app-nav>

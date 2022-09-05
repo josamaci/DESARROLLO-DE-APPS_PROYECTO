@@ -1,0 +1,45 @@
+<app-nav>
+    <section class="container">
+        <h1>Mi horario de atención</h1>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>Seleccione un día...</option>
+            <ng-container *ngFor="let dia of dias">
+                <option value="{{dia}}" >{{dia}}</option>
+            </ng-container>
+        </select>
+        <div class="mat-elevation-z8">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">DÍA</th>
+                            <th scope="col">MODALIDAD</th>
+                            <th scope="col">DIRECCIÓN</th>
+                            <th scope="col">HORA INICIO</th>
+                            <th scope="col">HORA FIN</th>
+                            <th scope="col">PRECIO</th>
+                            <th scope="col">DESCUENTO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let plan of planes">
+                            <td scope="row">{{plan['DIA']}}</td>
+                            <td scope="row">{{plan['MODALIDAD']}}</td>
+                            <td scope="row">{{plan['DIRECCION']}}</td>
+                            <td scope="row">{{plan['HORA_INICIO']}}</td>
+                            <td scope="row">{{plan['HORA_FIN']}}</td>
+                            <td scope="row">${{plan['PRECIO']}}.00</td>
+                            <td scope="row">{{plan['DESCUENTO']}}%</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <br>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+</app-nav>
