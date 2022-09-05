@@ -1,0 +1,45 @@
+{
+    "model": {
+        "type": "Object",
+        "value": {
+            "ID_PLAN": {
+                "type": "incrementNumber",
+                "options": {
+                    "from": 1
+                }
+            },
+            "ID_MEDICO": {
+                "type": "randomNumberBetween",
+                "value": [1, 5]
+            },
+            "DIA": {
+                "type": "randomElementInArray",
+                "value": ["LUNES", "MARTES", "MIERCOLES", "JUEVES", "VIERNES", "SABADO", "DOMINGO"]
+            },
+            "MODALIDAD": {
+                "type": "randomElementInArray",
+                "value": ["PRESENCIAL", "VIRTUAL"]
+            },
+            "DIRECCION": {
+                "type": "faker",
+                "value": "address.streetAddress"
+            },
+            "HORA_INICIO": {
+                "type": "randomElementInArray",
+                "value": ["07:00:00", "08:00:00", "09:00:00", "10:00:00", "11:00:00", "12:00:00", "13:00:00", "14:00:00", "15:00:00", "16:00:00", "17:00:00", "18:00:00", "19:00:00", "20:00:00"]
+            },
+            "HORA_FIN": {
+                "type": "randomElementInArray",
+                "value": ["07:00:00", "08:00:00", "09:00:00", "10:00:00", "11:00:00", "12:00:00", "13:00:00", "14:00:00", "15:00:00", "16:00:00", "17:00:00", "18:00:00", "19:00:00", "20:00:00"]
+            },
+            "PRECIO": {
+                "type": "randomNumberBetween",
+                "value": [15, 60]
+            },
+            "DESCUENTO": {
+                "type": "randomNumberBetween",
+                "value": [10, 50]
+            }
+        }
+    }
+}

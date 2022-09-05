@@ -1,0 +1,58 @@
+{
+    "model": {
+        "type": "Object",
+        "value": {
+            "ID_CITA": {
+                "type": "incrementNumber",
+                "options": {
+                    "from": 1
+                }
+            },
+            "ID_MEDICO": {
+                "type": "randomNumberBetween",
+                "value": [1, 5]
+            },
+            "ID_PACIENTE": {
+                "type": "randomNumberBetween",
+                "value": [6, 9]
+            },
+            "MODALIDAD": {
+                "type": "randomElementInArray",
+                "value": ["PRESENCIAL", "VIRTUAL"]
+            },
+            "DIRECCION": {
+                "type": "faker",
+                "value": "address.streetAddress"
+            },
+            "FECHA": {
+                "type": "faker",
+                "value": "date.between",
+                "options": ["2020-01-02", "2022-12-29"]
+            },
+            "HORA_INICIO": {
+                "type": "randomElementInArray",
+                "value": ["07:00:00", "08:00:00", "09:00:00", "10:00:00", "11:00:00", "12:00:00", "13:00:00", "14:00:00", "15:00:00", "16:00:00", "17:00:00", "18:00:00", "19:00:00", "20:00:00"]
+            },
+            "HORA_FIN": {
+                "type": "randomElementInArray",
+                "value": ["07:00:00", "08:00:00", "09:00:00", "10:00:00", "11:00:00", "12:00:00", "13:00:00", "14:00:00", "15:00:00", "16:00:00", "17:00:00", "18:00:00", "19:00:00", "20:00:00"]
+            },
+            "ESTADO": {
+                "type": "randomElementInArray",
+                "value": ["DISPONIBLE", "DESHABILITADA", "PENDIENTE", "PLANIFICADA", "CANCELADA", "INICIADA", "FINALIZADA"]
+            },
+            "PRECIO": {
+                "type": "randomNumberBetween",
+                "value": [15, 60]
+            },
+            "DESCUENTO": {
+                "type": "randomNumberBetween",
+                "value": [10, 50]
+            },
+            "PAGO_REGISTRADO": {
+                "type": "randomElementInArray",
+                "value": ["TRUE", "FALSE"]
+            }
+        }
+    }
+}
